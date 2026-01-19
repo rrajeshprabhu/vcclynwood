@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram, Facebook } from 'lucide-react';
 
 const About = () => {
     return (
@@ -22,16 +22,16 @@ const About = () => {
 
                     {/* Our Parent Temple */}
                     <div className="mb-10">
-                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4">Our Parent Temple - VCC Seattle</h2>
+                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4">Our Parent Temple - VCC Sammamish</h2>
                         <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-primary">
                             <p className="text-gray-700 mb-4 leading-relaxed">
-                                The <strong>Vedic Cultural Center, Seattle</strong> is a community services initiative of ISKCON of Washington, located in Sammamish, WA. For over 25 years, VCC Seattle has been a beacon of Vedic knowledge and spiritual culture in the Pacific Northwest.
+                                The <strong>Vedic Cultural Center, Seattle</strong> is a community services initiative of ISKCON of Washington, located in Sammamish, WA. For over 25 years, VCC Sammamish has been a beacon of Vedic knowledge and spiritual culture in the Pacific Northwest.
                             </p>
                             <p className="text-gray-700 mb-4 leading-relaxed">
-                                VCC Seattle offers a wide range of programs including daily deity worship, Bhagavad Gita classes, Sunday Feast, Vedic School for children, Bhakti Women programs, Vedic University, and numerous festivals throughout the year.
+                                VCC Sammamish offers a wide range of programs including daily deity worship, Bhagavad Gita classes, Sunday Feast, Vedic School for children, Bhakti Women programs, Vedic University, and numerous festivals throughout the year.
                             </p>
                             <a href="https://www.vedicculturalcenter.org/about-us/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
-                                Learn more about VCC Seattle <ArrowRight size={16} />
+                                Learn more about VCC Sammamish <ArrowRight size={16} />
                             </a>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const About = () => {
                     <div className="mb-10">
                         <h2 className="text-2xl font-serif font-bold text-secondary mb-4">Our Spiritual Leadership</h2>
                         <p className="text-gray-700 mb-4 leading-relaxed">
-                            Both VCC Seattle and VCC Lynnwood operate under the guidance and leadership of{' '}
+                            Both VCC Sammamish and VCC Lynnwood operate under the guidance and leadership of{' '}
                             <strong className="text-secondary">His Holiness Harivilas Maharaj</strong>, who has dedicated his life to spreading the teachings of Bhagavad Gita and the practice of Bhakti Yoga.
                         </p>
                         <p className="text-gray-700 mb-4 leading-relaxed">
@@ -111,16 +111,36 @@ const About = () => {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="text-center bg-secondary text-white p-8 rounded-lg">
-                        <h2 className="text-2xl font-serif font-bold mb-4">Join Our Community</h2>
-                        <p className="mb-6">Experience peace, knowledge, and fellowship at VCC Lynnwood.</p>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <a href="https://www.instagram.com/iskcon_lynnwood/" target="_blank" rel="noopener noreferrer" className="bg-white text-secondary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition-colors">
-                                Follow us on Instagram
-                            </a>
-                            <a href="https://www.facebook.com/people/VCC-Lynwood/61581783850360/" target="_blank" rel="noopener noreferrer" className="bg-white text-secondary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition-colors">
-                                Follow us on Facebook
-                            </a>
+                    <div className="relative text-center text-white p-12 rounded-lg overflow-hidden">
+                        {/* Background Image */}
+                        <div
+                            className="absolute inset-0 bg-cover bg-center"
+                            style={{ backgroundImage: "url('/images/hero-image-1.webp')" }}
+                        />
+                        {/* Dark Overlay */}
+                        <div className="absolute inset-0 bg-black/60" />
+                        {/* Content */}
+                        <div className="relative z-10">
+                            <h2 className="text-2xl font-serif font-bold mb-4">Join Our Community</h2>
+                            <p className="mb-6">Experience peace, knowledge, and community at VCC Lynnwood.</p>
+                            <div className="flex flex-wrap justify-center gap-6">
+                                <a
+                                    href="https://www.instagram.com/iskcon_lynnwood/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-3 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform shadow-lg"
+                                >
+                                    <Instagram size={22} /> Follow on Instagram
+                                </a>
+                                <a
+                                    href="https://www.facebook.com/people/VCC-Lynwood/61581783850360/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-3 bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform shadow-lg hover:bg-blue-700"
+                                >
+                                    <Facebook size={22} /> Follow on Facebook
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

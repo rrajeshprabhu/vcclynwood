@@ -24,6 +24,16 @@ const slides = [
     },
     {
         id: 3,
+        image: '/images/hero-image-feastsponsor.webp',
+        title: 'Sponsor a Feast',
+        subtitle: 'Support our community by sponsoring a Sunday feast prasadam.',
+        cta: 'Sponsor Now',
+        link: 'https://www.vedicculturalcenter.org/sponsor/',
+        isFlyer: true,
+        isExternal: true
+    },
+    {
+        id: 4,
         image: '/images/hero-image-1.webp',
         title: 'Welcome to VCC Lynnwood',
         subtitle: 'Experience the joy of spiritual community in Seattle North.',
@@ -31,7 +41,7 @@ const slides = [
         link: '/about'
     },
     {
-        id: 4,
+        id: 5,
         image: '/images/hero-image-2.webp',
         title: 'Friday Kirtan',
         subtitle: 'Experience the joy of congregational chanting every Friday evening.',
@@ -39,7 +49,7 @@ const slides = [
         link: '/events'
     },
     {
-        id: 5,
+        id: 6,
         image: '/images/Hero-image-3.webp',
         title: 'Welcome to VCC Lynnwood',
         subtitle: 'A spiritual home for the Seattle North community under the guidance of HH Harivilas Maharaj.',
@@ -56,7 +66,7 @@ const Hero = () => {
         const timer = setInterval(() => {
             setDirection(1);
             setCurrent((prev) => (prev + 1) % slides.length);
-        }, 6000);
+        }, 4000); // 4 seconds per slide
         return () => clearInterval(timer);
     }, []);
 
@@ -160,12 +170,23 @@ const Hero = () => {
                                                     whileHover={{ scale: 1.05 }}
                                                     whileTap={{ scale: 0.95 }}
                                                 >
-                                                    <Link
-                                                        to={currentSlide.link || '/about'}
-                                                        className="bg-primary hover:bg-white hover:text-secondary text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-colors inline-block"
-                                                    >
-                                                        {currentSlide.cta}
-                                                    </Link>
+                                                    {currentSlide.isExternal ? (
+                                                        <a
+                                                            href={currentSlide.link}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="bg-primary hover:bg-white hover:text-secondary text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-colors inline-block"
+                                                        >
+                                                            {currentSlide.cta}
+                                                        </a>
+                                                    ) : (
+                                                        <Link
+                                                            to={currentSlide.link || '/about'}
+                                                            className="bg-primary hover:bg-white hover:text-secondary text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-colors inline-block"
+                                                        >
+                                                            {currentSlide.cta}
+                                                        </Link>
+                                                    )}
                                                 </motion.div>
                                             </div>
                                         </div>

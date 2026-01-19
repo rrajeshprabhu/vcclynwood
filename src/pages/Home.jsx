@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/home/Hero';
+import FeastSponsors from '../components/home/FeastSponsors';
 import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -178,12 +179,15 @@ const Home = () => {
                     </div>
 
                     <div className="text-center mt-12">
-                        <a href="https://www.vedicculturalcenter.org/events/" target="_blank" rel="noopener noreferrer" className="bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary transition-colors font-medium inline-block">
+                        <Link to="/events" className="bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary transition-colors font-medium inline-block">
                             View Full Calendar
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
+
+            {/* Feast Sponsors */}
+            <FeastSponsors />
 
             {/* Quote Section */}
             <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-100 text-center px-4 relative overflow-hidden">

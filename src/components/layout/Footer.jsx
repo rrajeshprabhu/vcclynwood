@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     {/* About */}
                     <div>
-                        <h3 className="text-xl font-serif font-bold text-primary mb-4">VCC Lynnwood</h3>
+                        <h3 className="text-xl font-serif font-bold text-secondary mb-4">VCC Lynnwood</h3>
                         <p className="text-gray-400 mb-6 leading-relaxed">
                             Dedicated to preserving and promoting Vedic culture, spiritual values, and community service. Join us in our journey of devotion and learning.
                         </p>
@@ -26,48 +26,48 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Quick Links</h3>
+                        <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block text-secondary">Quick Links</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-                            <li><Link to="/events" className="hover:text-primary transition-colors">Upcoming Events</Link></li>
-                            <li><a href="https://www.vedicculturalcenter.org/sponsor/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Donate</a></li>
-                            <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
+                            <li><Link to="/about" className="hover:text-secondary transition-colors">About Us</Link></li>
+                            <li><Link to="/events" className="hover:text-secondary transition-colors">Upcoming Events</Link></li>
+                            <li><a href="https://www.vedicculturalcenter.org/sponsor/" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">Donate</a></li>
+                            <li><Link to="/contact" className="hover:text-secondary transition-colors">Contact Us</Link></li>
                         </ul>
                     </div>
 
                     {/* Weekly Programs */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Weekly Programs</h3>
+                        <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block text-secondary">Weekly Programs</h3>
                         <ul className="space-y-2 text-gray-400 text-sm">
-                            <li><Link to="/events" className="hover:text-primary transition-colors">Fri: Class & Kirtan (7 PM)</Link></li>
-                            <li><Link to="/events" className="hover:text-primary transition-colors">Sat: Kirtan (6:30 PM)</Link></li>
-                            <li><Link to="/events" className="hover:text-primary transition-colors">Sun AM: BG Class (11 AM)</Link></li>
-                            <li><Link to="/events" className="hover:text-primary transition-colors">Sun PM: Vedic School & Feast (6:30 PM)</Link></li>
+                            <li><Link to="/events" className="hover:text-secondary transition-colors">Fri: Class & Kirtan (7 PM)</Link></li>
+                            <li><Link to="/events" className="hover:text-secondary transition-colors">Sat: Kirtan (6:30 PM)</Link></li>
+                            <li><Link to="/events" className="hover:text-secondary transition-colors">Sun AM: BG Class (11 AM)</Link></li>
+                            <li><Link to="/events" className="hover:text-secondary transition-colors">Sun PM: Vedic School & Feast (6:30 PM)</Link></li>
                         </ul>
                     </div>
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">VCC Lynnwood</h3>
+                        <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block text-secondary">VCC Lynnwood</h3>
                         <ul className="space-y-3 text-gray-400 text-sm">
                             <li className="flex items-start gap-2">
-                                <MapPin className="text-primary mt-1 flex-shrink-0" size={16} />
+                                <MapPin className="text-secondary mt-1 flex-shrink-0" size={16} />
                                 <span>4305 178th Pl SW,<br />Lynnwood, WA 98037</span>
                             </li>
                         </ul>
 
-                        <h3 className="text-lg font-bold mb-4 mt-6 border-b border-gray-700 pb-2 inline-block">VCC Sammamish</h3>
+                        <h3 className="text-lg font-bold mb-4 mt-6 border-b border-gray-700 pb-2 inline-block text-secondary">VCC Sammamish</h3>
                         <ul className="space-y-3 text-gray-400 text-sm">
                             <li className="flex items-start gap-2">
-                                <MapPin className="text-primary mt-1 flex-shrink-0" size={16} />
+                                <MapPin className="text-secondary mt-1 flex-shrink-0" size={16} />
                                 <span>1420 228th Ave SE,<br />Sammamish, WA 98075</span>
                             </li>
                             <li className="flex items-center gap-2">
-                                <Mail className="text-primary flex-shrink-0" size={16} />
-                                <a href="mailto:info@vedicculturalcenter.org" className="hover:text-primary transition-colors">info@vedicculturalcenter.org</a>
+                                <Mail className="text-secondary flex-shrink-0" size={16} />
+                                <a href="mailto:info@vedicculturalcenter.org" className="hover:text-secondary transition-colors">info@vedicculturalcenter.org</a>
                             </li>
                             <li className="flex items-start gap-2">
-                                <Phone className="text-primary mt-1 flex-shrink-0" size={16} />
+                                <Phone className="text-secondary mt-1 flex-shrink-0" size={16} />
                                 <div>
                                     <span>Namavrata Das: +1 (206) 979-8002</span><br />
                                     <span>Damodar Prasad Das: +1 (425) 761-4605</span>

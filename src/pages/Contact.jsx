@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, Phone, ExternalLink, Clock } from 'lucide-react';
+import { MapPin, Mail, Phone, ExternalLink, Clock, Facebook, Instagram } from 'lucide-react';
 
 const Contact = () => {
     return (
@@ -46,6 +46,37 @@ const Contact = () => {
                                             <strong>Fri - Sun:</strong> 6:30 PM - 8:30 PM<br />
                                             <strong>Mon - Thu:</strong> Closed
                                         </p>
+                                    </div>
+                                </div>
+
+                                {/* Social Links */}
+                                <div className="pt-4 border-t border-gray-200">
+                                    <p className="font-medium text-gray-800 mb-3">Follow Us</p>
+                                    <div className="flex flex-wrap gap-3">
+                                        <a
+                                            href="https://www.facebook.com/people/VCC-Lynwood/61581783850360/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors"
+                                        >
+                                            <Facebook size={16} /> Facebook
+                                        </a>
+                                        <a
+                                            href="https://www.instagram.com/iskcon_lynnwood/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+                                        >
+                                            <Instagram size={16} /> Instagram
+                                        </a>
+                                        <a
+                                            href="https://www.instagram.com/kirtan.buddies"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 bg-gradient-to-br from-pink-500 to-rose-400 text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+                                        >
+                                            <Instagram size={16} /> Kirtan Buddies
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +139,7 @@ const Contact = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-medium transition-colors shadow-md"
                         >
-                            Contact VCC Seattle <ExternalLink size={18} />
+                            Contact VCC Sammamish <ExternalLink size={18} />
                         </a>
                     </div>
 

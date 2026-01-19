@@ -123,7 +123,7 @@ const Events = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary transition-colors font-medium"
                         >
-                            View Full Calendar on VCC Seattle <ExternalLink size={18} />
+                            View Full Calendar on VCC Sammamish <ExternalLink size={18} />
                         </a>
                     </div>
                 </div>
