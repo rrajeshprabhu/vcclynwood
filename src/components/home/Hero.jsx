@@ -131,13 +131,14 @@ const Hero = () => {
                                         <div className="absolute inset-0 bg-black/40" />
                                         {/* Text Content */}
                                         <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-                                            <div className="max-w-3xl text-white z-10">
+                                            <div className="max-w-3xl z-10">
                                                 <motion.h1
                                                     key={`title-${current}`}
                                                     initial={{ y: 20, opacity: 0 }}
                                                     animate={{ y: 0, opacity: 1 }}
                                                     transition={{ delay: 0.2, duration: 0.8 }}
-                                                    className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4 drop-shadow-lg"
+                                                    className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4"
+                                                    style={{ color: '#ffffff', textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}
                                                 >
                                                     {currentSlide.title}
                                                 </motion.h1>
@@ -146,7 +147,8 @@ const Hero = () => {
                                                     initial={{ y: 20, opacity: 0 }}
                                                     animate={{ y: 0, opacity: 1 }}
                                                     transition={{ delay: 0.4, duration: 0.8 }}
-                                                    className="text-lg md:text-xl lg:text-2xl mb-6 font-light drop-shadow-md"
+                                                    className="text-lg md:text-xl lg:text-2xl mb-6 font-light"
+                                                    style={{ color: '#ffffff', textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}
                                                 >
                                                     {currentSlide.subtitle}
                                                 </motion.p>

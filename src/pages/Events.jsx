@@ -1,21 +1,99 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Instagram } from 'lucide-react';
 
 const Events = () => {
     return (
         <div className="bg-surface min-h-screen py-12">
             <div className="container mx-auto px-4">
                 <div className="bg-white p-8 rounded-lg shadow-sm">
-                    <h1 className="text-3xl font-serif font-bold text-secondary mb-4 border-b pb-4">Festival Calendar 2026</h1>
+                    <h1 className="text-3xl font-serif font-bold text-secondary mb-6 border-b pb-4">Events & Programs</h1>
+
+                    {/* Weekly Programs - Now at the top */}
+                    <div className="bg-orange-50 border-l-4 border-primary p-6 mb-8 rounded-r-lg">
+                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4">VCC Lynnwood Weekly Programs</h2>
+                        <ul className="text-gray-700 space-y-3">
+                            <li className="flex items-start gap-2">
+                                <span className="bg-primary text-white text-xs px-2 py-1 rounded font-bold min-w-[40px] text-center">FRI</span>
+                                <div>
+                                    <strong>Class by HH Harivilas Maharaj</strong> (7:00 PM) | <strong>Kirtan</strong> (8:00 PM)
+                                    <div className="text-sm text-green-700 mt-1">🍽️ Dinner Prasadam served</div>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="bg-primary text-white text-xs px-2 py-1 rounded font-bold min-w-[40px] text-center">SAT</span>
+                                <div>
+                                    <strong>Kirtan</strong> - 6:30 PM to 8:30 PM
+                                    <div className="text-sm text-green-700 mt-1">🍽️ Dinner Prasadam served</div>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="bg-primary text-white text-xs px-2 py-1 rounded font-bold min-w-[40px] text-center">SUN</span>
+                                <span><strong>Bhagavad Gita Class for Adults</strong> - 11:00 AM to 1:00 PM</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="bg-secondary text-white text-xs px-2 py-1 rounded font-bold min-w-[40px] text-center">SUN</span>
+                                <div>
+                                    <strong>Vedic School & Feast Prasadam</strong> - 6:30 PM to 8:30 PM
+                                    <ul className="ml-2 mt-2 text-sm text-gray-600 space-y-1">
+                                        <li>• Kishora Class (10+ years)</li>
+                                        <li>• Gopinath Class (6-9 years)</li>
+                                        <li>• Damodar Class (3-5 years)</li>
+                                    </ul>
+                                    <div className="text-sm text-green-700 mt-1">🍽️ Dinner Prasadam served</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Kirtan Buddies */}
+                    <div className="bg-pink-50 border-l-4 border-pink-400 p-6 mb-8 rounded-r-lg">
+                        <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                            <img
+                                src="/images/kirtan-buddies-logo.png"
+                                alt="Kirtan Buddies Logo"
+                                className="w-32 h-32 object-contain flex-shrink-0"
+                            />
+                            <div className="flex-1">
+                                <h2 className="text-2xl font-serif font-bold text-secondary mb-4">Kirtan Buddies</h2>
+                                <p className="text-gray-700 mb-4">
+                                    <strong>A youth-driven initiative at VCC Lynnwood!</strong> Kirtan Buddies is dedicated to getting kids involved in devotional service and congregational chanting from a young age.
+                                </p>
+                                <p className="text-gray-700 mb-4">
+                                    Kids of all ages can participate and learn from their peers through:
+                                </p>
+                                <ul className="text-gray-700 space-y-2 ml-4 mb-4">
+                                    <li className="flex items-center gap-2">
+                                        <span className="text-pink-500">•</span> Singing and chanting
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="text-pink-500">•</span> Dancing
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <span className="text-pink-500">•</span> Learning instruments - Harmonium, Mridanga, Kartals
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://www.instagram.com/kirtan.buddies"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white px-5 py-2 rounded-full hover:opacity-90 transition-opacity font-medium"
+                                >
+                                    <Instagram size={18} /> Follow on Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Festival & Ekadashi Calendars */}
+                    <h2 className="text-2xl font-serif font-bold text-secondary mb-4">Festival Calendar 2026</h2>
                     <p className="text-gray-600 mb-6">
                         VCC Lynnwood follows the festival calendar of our parent temple, <a href="https://www.vedicculturalcenter.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Vedic Cultural Center, Seattle</a>.
-                        Please check below for upcoming festivals and events.
                     </p>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                         {/* Festival Calendar */}
                         <div>
-                            <h2 className="text-xl font-bold text-secondary mb-4">Festival Calendar</h2>
+                            <h3 className="text-xl font-bold text-secondary mb-4">Festival Calendar</h3>
                             <a href="/images/festival-calendar-2026.png" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="/images/festival-calendar-2026.png"
@@ -27,7 +105,7 @@ const Events = () => {
 
                         {/* Ekadashi Calendar */}
                         <div>
-                            <h2 className="text-xl font-bold text-secondary mb-4">Ekadashi Calendar</h2>
+                            <h3 className="text-xl font-bold text-secondary mb-4">Ekadashi Calendar</h3>
                             <a href="/images/ekadashi-calendar-2026.png" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="/images/ekadashi-calendar-2026.png"
@@ -36,23 +114,6 @@ const Events = () => {
                                 />
                             </a>
                         </div>
-                    </div>
-
-                    <div className="bg-orange-50 border-l-4 border-primary p-4 mb-6">
-                        <p className="font-bold text-secondary mb-3">VCC Lynnwood Weekly Programs</p>
-                        <ul className="text-gray-700 space-y-2">
-                            <li><strong>Friday:</strong> Class by HH Harivilas Maharaj (7:00 PM) | Kirtan (8:00 PM)</li>
-                            <li><strong>Saturday:</strong> Kirtan - 6:30 PM to 8:30 PM</li>
-                            <li><strong>Sunday Morning:</strong> Bhagavad Gita Class for Adults - 11:00 AM to 1:00 PM</li>
-                            <li>
-                                <strong>Sunday Evening:</strong> Vedic School & Feast Prasadam - 6:30 PM to 8:30 PM
-                                <ul className="ml-4 mt-1 text-sm text-gray-600">
-                                    <li>• Kishora Class (10+ years)</li>
-                                    <li>• Gopinath Class (6-9 years)</li>
-                                    <li>• Damodar Class (3-5 years)</li>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
 
                     <div className="text-center">

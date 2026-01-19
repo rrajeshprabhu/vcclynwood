@@ -13,9 +13,14 @@ const Footer = () => {
                         <p className="text-gray-400 mb-6 leading-relaxed">
                             Dedicated to preserving and promoting Vedic culture, spiritual values, and community service. Join us in our journey of devotion and learning.
                         </p>
+                        <h4 className="text-sm font-bold text-white mb-3">Follow Us</h4>
                         <div className="flex space-x-4">
-                            <a href="https://www.facebook.com/people/VCC-Lynwood/61581783850360/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Facebook size={18} /></a>
-                            <a href="https://www.instagram.com/iskcon_lynnwood/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Instagram size={18} /></a>
+                            <a href="https://www.facebook.com/people/VCC-Lynwood/61581783850360/" target="_blank" rel="noopener noreferrer" className="bg-blue-600 p-3 rounded-full hover:bg-blue-700 text-white transition-colors flex items-center gap-2">
+                                <Facebook size={22} />
+                            </a>
+                            <a href="https://www.instagram.com/iskcon_lynnwood/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 p-3 rounded-full hover:opacity-90 text-white transition-colors flex items-center gap-2">
+                                <Instagram size={22} />
+                            </a>
                         </div>
                     </div>
 
@@ -34,10 +39,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Weekly Programs</h3>
                         <ul className="space-y-2 text-gray-400 text-sm">
-                            <li>Fri: Class & Kirtan (7 PM)</li>
-                            <li>Sat: Kirtan (6:30 PM)</li>
-                            <li>Sun AM: BG Class (11 AM)</li>
-                            <li>Sun PM: Vedic School & Feast (6:30 PM)</li>
+                            <li><Link to="/events" className="hover:text-primary transition-colors">Fri: Class & Kirtan (7 PM)</Link></li>
+                            <li><Link to="/events" className="hover:text-primary transition-colors">Sat: Kirtan (6:30 PM)</Link></li>
+                            <li><Link to="/events" className="hover:text-primary transition-colors">Sun AM: BG Class (11 AM)</Link></li>
+                            <li><Link to="/events" className="hover:text-primary transition-colors">Sun PM: Vedic School & Feast (6:30 PM)</Link></li>
                         </ul>
                     </div>
 
@@ -73,12 +78,8 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                     <p>&copy; {new Date().getFullYear()} Vedic Cultural Center Lynnwood. All rights reserved.</p>
-                    <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white">Privacy Policy</a>
-                        <a href="#" className="hover:text-white">Terms of Service</a>
-                    </div>
                 </div>
             </div>
         </footer>

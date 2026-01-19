@@ -32,12 +32,16 @@ const Header = () => {
             </div>
 
             {/* Main Nav */}
-            <nav className="container mx-auto px-4 py-4">
-                <div className="flex justify-between items-center">
+            <nav className="container mx-auto px-2 md:px-4 py-2 md:py-4">
+                <div className="flex justify-between items-center gap-2">
                     {/* Logo */}
-                    <Link to="/" className="text-2xl font-serif font-bold text-secondary flex items-center gap-2">
-                        <img src={logo} alt="VCC Logo" className="h-12 w-auto" />
-                        <span>VCC Lynnwood</span>
+                    <Link to="/" className="flex items-center gap-1 flex-1 min-w-0">
+                        {/* Logo image - bigger on mobile, no max-width constraint */}
+                        <img src={logo} alt="VCC Logo" className="h-10 md:h-12 w-auto flex-shrink-0 max-w-[220px] md:max-w-none object-contain object-left" />
+                        {/* Desktop only: show text */}
+                        <span className="hidden md:block text-2xl font-serif font-bold text-secondary whitespace-nowrap">VCC Lynnwood</span>
+                        {/* Mobile: tiny Lynnwood badge */}
+                        <span className="md:hidden text-[10px] font-bold text-white bg-secondary px-1.5 py-0.5 rounded whitespace-nowrap">Lynnwood</span>
                     </Link>
 
                     {/* Desktop Menu */}
@@ -94,7 +98,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-secondary"
+                        className="md:hidden text-secondary bg-orange-100 p-2 rounded-lg flex-shrink-0"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
