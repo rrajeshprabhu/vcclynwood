@@ -8,9 +8,9 @@ const Events = () => {
                 <div className="bg-white p-8 rounded-lg shadow-sm">
                     <h1 className="text-3xl font-serif font-bold text-secondary mb-6 border-b pb-4">Events & Programs</h1>
 
-                    {/* Weekly Programs - Now at the top */}
+                    {/* Weekly Schedule - Now at the top */}
                     <div className="bg-orange-50 border-l-4 border-primary p-6 mb-8 rounded-r-lg">
-                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4">VCC Lynnwood Weekly Programs</h2>
+                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4">VCC Lynnwood Weekly Schedule</h2>
                         <ul className="text-gray-700 space-y-3">
                             <li className="flex items-start gap-2">
                                 <span className="bg-primary text-white text-xs px-2 py-1 rounded font-bold min-w-[40px] text-center">FRI</span>
@@ -101,6 +101,59 @@ const Events = () => {
                             </p>
                             <p className="text-gray-700 text-sm italic">
                                 For more information about the program schedule, registration, and upcoming batches, please contact us or visit during our regular programs.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Synergy School */}
+                    <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-l-4 border-green-500 p-6 mb-8 rounded-r-lg">
+                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4 flex items-center gap-3">
+                            <span className="text-3xl">🎓</span>
+                            Synergy School
+                        </h2>
+                        <div className="flex flex-col lg:flex-row gap-6 items-start mb-4">
+                            <div className="lg:w-80 flex-shrink-0">
+                                <img
+                                    src="/images/Synergy-School.jpeg"
+                                    alt="Synergy School"
+                                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                                />
+                            </div>
+                            <div className="flex-1">
+                                <p className="text-gray-700 mb-4 leading-relaxed">
+                                    <strong>Synergy School</strong> is a holistic educational program that integrates academic excellence with spiritual values. Designed to nurture young minds, this initiative provides a balanced approach to learning that includes both modern education and Vedic wisdom.
+                                </p>
+                                <p className="text-gray-700 mb-4 leading-relaxed">
+                                    Through a carefully crafted curriculum, students develop strong character, ethical values, and a deep appreciation for their cultural and spiritual heritage while excelling in academics.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mb-4">
+                            <h3 className="font-bold text-lg text-secondary mb-3">Program Highlights:</h3>
+                            <ul className="text-gray-700 space-y-2 ml-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-green-500 mt-1">•</span>
+                                    <span><strong>Value-Based Education:</strong> Character building through Vedic principles and moral stories</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-green-500 mt-1">•</span>
+                                    <span><strong>Academic Excellence:</strong> Strong foundation in core subjects and critical thinking</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-green-500 mt-1">•</span>
+                                    <span><strong>Cultural Heritage:</strong> Sanskrit learning, bhajans, and traditional arts</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-green-500 mt-1">•</span>
+                                    <span><strong>Holistic Development:</strong> Spiritual, intellectual, physical, and emotional growth</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="bg-white/70 p-4 rounded-lg border-l-4 border-green-400">
+                            <p className="text-gray-700 text-sm italic">
+                                For more information about enrollment, curriculum, and program details, please contact us or visit during our regular programs.
                             </p>
                         </div>
                     </div>

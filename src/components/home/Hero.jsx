@@ -33,7 +33,7 @@ const slides = [
     },
     {
         id: 4,
-        image: '/images/hero-image-feastsponsor.webp',
+        image: '/images/hero-image-feastsponsor1.png',
         title: 'Sponsor a Feast',
         subtitle: 'Support our community by sponsoring a Sunday feast prasadam.',
         cta: 'Sponsor Now',
