@@ -24,6 +24,15 @@ const slides = [
     },
     {
         id: 3,
+        image: '/images/discover-yourself-hires.png',
+        title: 'Discover Yourself Program',
+        subtitle: 'Explore the depths of Vedic wisdom and self-realization.',
+        cta: 'Learn More',
+        link: '/events',
+        isFlyer: true
+    },
+    {
+        id: 4,
         image: '/images/hero-image-feastsponsor.webp',
         title: 'Sponsor a Feast',
         subtitle: 'Support our community by sponsoring a Sunday feast prasadam.',
@@ -33,7 +42,7 @@ const slides = [
         isExternal: true
     },
     {
-        id: 4,
+        id: 5,
         image: '/images/hero-image-1.webp',
         title: 'Welcome to VCC Lynnwood',
         subtitle: 'Experience the joy of spiritual community in Seattle North.',
@@ -41,7 +50,7 @@ const slides = [
         link: '/about'
     },
     {
-        id: 5,
+        id: 6,
         image: '/images/hero-image-2.webp',
         title: 'Friday Kirtan',
         subtitle: 'Experience the joy of congregational chanting every Friday evening.',
@@ -49,7 +58,7 @@ const slides = [
         link: '/events'
     },
     {
-        id: 6,
+        id: 7,
         image: '/images/Hero-image-3.webp',
         title: 'Welcome to VCC Lynnwood',
         subtitle: 'A spiritual home for the Seattle North community under the guidance of HH Harivilas Maharaj.',

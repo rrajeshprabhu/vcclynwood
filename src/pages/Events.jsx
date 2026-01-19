@@ -45,6 +45,66 @@ const Events = () => {
                         </ul>
                     </div>
 
+                    {/* Discover Yourself Program */}
+                    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
+                        <h2 className="text-2xl font-serif font-bold text-secondary mb-4 flex items-center gap-3">
+                            <span className="text-3xl">📖</span>
+                            Discover Yourself Program (DYS)
+                        </h2>
+                        <div className="flex flex-col lg:flex-row gap-6 items-start mb-4">
+                            <div className="lg:w-80 flex-shrink-0">
+                                <img
+                                    src="/images/discover-yourself-hires.png"
+                                    alt="Discover Yourself Program"
+                                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                                />
+                            </div>
+                            <div className="flex-1">
+                                <p className="text-gray-700 mb-4 leading-relaxed">
+                                    <strong>Discover Your Self (DYS)</strong> is a systematic program that enhances your Spiritual Quotient (SQ) and Emotional Quotient (EQ) through the wisdom of the Bhagavad Gita and Vedic teachings.
+                                </p>
+                                <p className="text-gray-700 mb-4 leading-relaxed">
+                                    Through interactive sessions, you'll gain profound insights into fundamental questions about life, purpose, and satisfaction. The program explores scientific perspectives on the soul, consciousness, reincarnation, and the relationship between body and spirit, while improving personality development through ancient Vedic wisdom.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mb-4">
+                            <h3 className="font-bold text-lg text-secondary mb-3">What You'll Learn:</h3>
+                            <ul className="text-gray-700 space-y-2 ml-4">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-blue-500 mt-1">•</span>
+                                    <span><strong>The Science of the Soul:</strong> Understanding consciousness, the relationship between body and soul</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-blue-500 mt-1">•</span>
+                                    <span><strong>Life's Fundamental Questions:</strong> Exploring creation, purpose, happiness, and satisfaction</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-blue-500 mt-1">•</span>
+                                    <span><strong>Reincarnation & Karma:</strong> Scientific and scriptural perspectives on life after death</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-blue-500 mt-1">•</span>
+                                    <span><strong>Bhagavad Gita Wisdom:</strong> Practical application of timeless teachings for modern life</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-blue-500 mt-1">•</span>
+                                    <span><strong>Personality Development:</strong> Enhancing Spiritual Quotient (SQ) and Emotional Quotient (EQ)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="bg-white/70 p-4 rounded-lg border-l-4 border-blue-400">
+                            <p className="text-gray-700 text-sm mb-2">
+                                <strong>Program Format:</strong> Interactive sessions combining lectures, discussions, and Q&A
+                            </p>
+                            <p className="text-gray-700 text-sm italic">
+                                For more information about the program schedule, registration, and upcoming batches, please contact us or visit during our regular programs.
+                            </p>
+                        </div>
+                    </div>
+
                     {/* Kirtan Buddies */}
                     <div className="bg-pink-50 border-l-4 border-pink-400 p-6 mb-8 rounded-r-lg">
                         <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
