@@ -55,7 +55,7 @@ const slides = [
         title: 'Friday Kirtan',
         subtitle: 'Experience the joy of congregational chanting every Friday evening.',
         cta: 'Join Us',
-        link: '/events'
+        link: '/contact'
     },
     {
         id: 7,
